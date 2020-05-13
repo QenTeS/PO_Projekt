@@ -6,7 +6,7 @@ using namespace std;
 
 
 Animal::~Animal() {
-	cout << "[Animal] Zabijanie Zwierzêcia"<<endl;
+	cout << "[Animal] Zabijanie ZwierzÃªcia"<<endl;
 }
 
 const void Animal::getTest() {
@@ -25,8 +25,8 @@ Animal::Animal(int sila, int inicjatywa, int wiek, char znak) {
 	this->znak = znak;
 
 	Random random(0, 20);
-	cordX = random.Oblicz();
-	cordY = random.Oblicz();
+	this->cordX = random.Oblicz();
+	this->cordY = random.Oblicz();
 
 	cout << "[Animal] Tworzenie Zwierzecia" << endl;
 }
